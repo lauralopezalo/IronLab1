@@ -1,7 +1,7 @@
 body {
     background-color: #F4F6FC;
-    ;
 }
+
 
 h1 {
     font-family: 'Roboto', sans-serif;
@@ -24,32 +24,30 @@ h5 {
     font-weight: 500;
 }
 
-body {
-    margin: 10%;
-}
-
 p {
     font-family: 'Roboto', sans-serif;
     color: #6B708D;
     font-size: 20px;
     font-weight: 400;
+    line-height: 1.5;
 }
 
-.text-small a, button { 
+a, button { 
     font-family: 'Roboto', sans-serif;
     color:#6B708D;
     font-size: 17px;
     font-weight: 500;
     text-decoration: none;
-
 }
 
+/* nav menu --------------------------------*/
 
 nav {
     display: flex;
     justify-content: space-between;
     text-align: center;
     align-items: baseline;
+    margin: 5% 15%;
 }
 
 li {
@@ -63,4 +61,140 @@ li {
     color: #ffffff;
     border-style: none;
     padding: 15px 36px 15px 36px;
+}
+
+/* main section ---------------------- */
+#hero-section {
+    margin: 5% 15%;
+}
+
+#hero-section > div {
+    display: flex;
+    align-items: center;
+}
+
+#hero-section img {
+    margin: 0% -10%;
+}
+
+.select-work-touch {
+    display: flex;
+    align-items: baseline;
+    gap: 20px;
+}
+
+#logos-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+.selected {
+    background-color: #072AC8;
+    color: #ffffff;
+    border-style: none;
+    padding: 15px 36px 15px 36px;
+}
+
+/* Recent projects----------------------- */
+#our-work {
+    margin: 5% 15%;
+}
+
+
+
+#our-work > div {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+#our-work > div > div {
+    background-color: #ffffff;
+    padding-bottom: 45px;
+}
+
+#our-work p {
+    font-size: 17px;
+    margin-top: -10px;
+}
+
+#our-work h5, p, a {
+    margin: 30px;
+  }
+
+
+  #our-work a {
+    color: #072AC8;
+  }
+
+
+/* What our clients say------------------- */
+  
+#blue-rectangle {
+    height: 622px;
+    width: 1320px;
+    background-color: #292E47;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin: 100px;
+}
+
+#blue-rectangle h3 {
+    color: #ffffff;
+    position: absolute;
+    top: 70px;
+}
+
+#blue-rectangle h5 {
+    color: #FFC600;
+    position: absolute;
+    top: 250px;
+}
+
+.img1 {
+	position: absolute;
+	top: 80px;
+	left: 120px;
+}
+
+.img4 {
+	position: absolute;
+	top: 80px;
+	right: 120px;
+}
+
+.img2 {
+	position: absolute;
+	bottom: 80px;
+	left: 120px;
+}
+
+.img3 {
+	position: absolute;
+	bottom: 80px;
+	right: 120px;
+}
+
+#blue-rectangle div {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    position: absolute;
+	bottom: 80px;
+
+}
+
+#blue-rectangle p {
+    color: #A2D6F9;
+    font-size: 17px;
+    line-height: 1;
+}
+
+#blue-rectangle span {
+    color: #F4F6FC;
+    font-size: 13px;
 }
