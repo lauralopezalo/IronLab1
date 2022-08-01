@@ -1,48 +1,248 @@
+/* Enfoque mobile first */
+
 body {
     background-color: #F4F6FC;
+    font-family: 'Roboto', sans-serif;
 }
 
 
 h1 {
-    font-family: 'Roboto', sans-serif;
     color: #292E47;
-    font-size: 60px;
+    font-size: 30px;
     font-weight: 700;
+    line-height: 1.3;
+    text-align: center;
 }
 
 h3 {
-    font-family: 'Roboto', sans-serif;
     color: #292E47;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
 }
 
 h5 {
-    font-family: 'Roboto', sans-serif;
     color: #292E47;
     font-size: 24px;
-    font-weight: 500;
+    font-weight: 600;
+    line-height: 1.15;
 }
 
 p {
-    font-family: 'Roboto', sans-serif;
-    color: #6B708D;
-    font-size: 20px;
+    color: #292E47;
+    font-size: 17px;
     font-weight: 400;
     line-height: 1.5;
 }
 
-a, button { 
-    font-family: 'Roboto', sans-serif;
-    color:#6B708D;
+
+
+/* logo and hamgurguer menu ---------------------- */
+
+nav {
+    /* width: 100vw; */
+    height: 50px;
+    margin: 0;
+}
+
+nav ul, button {
+    display: none;
+}
+
+nav div {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: baseline;
+    padding: 15px 25px;
+}
+
+nav > div > img {
+    width: 55px;
+}
+
+
+
+/* main section ---------------------- */
+ 
+#hero-section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#hero-section div {
+    display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.hero-buttons {
+    height: 100px;
+    width: 170px;
     font-size: 17px;
     font-weight: 500;
+    line-height: 1.2;
+}
+
+.hero-buttons a {
+   margin: 10px;
+}
+
+#hero-section p {
+    color: #6B708D;
+}
+
+.selected-button {
+    background-color: #072AC8;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 14px 24px;
+}
+
+.button-not-selected {
+    color:#6B708D;
+    font-size: 17px;
     text-decoration: none;
 }
 
-/* nav menu --------------------------------*/
+.targets {
+    display: none;
+}
 
-nav {
+#hero-section img {
+    width: 250px;
+    margin: 30px 0px;
+}
+
+
+#logos-container img {
+    width: 100px;
+}
+
+.amazon-logo {
+    display: none;
+}
+
+
+
+
+
+/* Recent projects----------------------- */
+
+#our-work {
+    display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+
+#our-work > div {
+    display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.project-target {
+    background-color: #ffffff;
+    padding-bottom: 45px;
+    max-width: 90%;
+    margin-bottom: 20px;
+}
+
+.project-img  {
+    max-width: 100%;
+}
+
+.project-img img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+
+#our-work p {
+    font-size: 17px;
+}
+
+#our-work h5, p, a {
+    margin: 30px;
+  }
+
+
+  #our-work a {
+    color: #072AC8;
+  } 
+  
+
+
+
+
+/* What our clients say------------------- */
+   
+#blue-rectangle {
+    height: 500px;
+    width: 100vw;
+    background-color: #292E47;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+#blue-rectangle h3 {
+    color: #ffffff;
+    position: absolute;
+    top: 70px;
+}
+
+#blue-rectangle h5 {
+    color: #FFC600;
+    position: absolute;
+    top: 250px;
+}
+
+
+
+#blue-rectangle div {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    position: absolute;
+	bottom: 80px;
+
+}
+
+#blue-rectangle p {
+    color: #A2D6F9;
+    font-size: 17px;
+    line-height: 1;
+}
+
+#blue-rectangle span {
+    color: #F4F6FC;
+    font-size: 13px;
+} 
+
+
+.img1, .img2, .img3, .img4 {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+/* Escritorio */
+/* nav menu */
+
+/* nav {
     display: flex;
     justify-content: space-between;
     text-align: center;
@@ -61,76 +261,42 @@ li {
     color: #ffffff;
     border-style: none;
     padding: 15px 36px 15px 36px;
+} */
+
+
+
+
+
+/* emoticonos */
+/* .img1 {
+	position: absolute;
+	top: 80px;
+	left: 120px;
 }
 
-/* main section ---------------------- */
-#hero-section {
-    margin: 5% 15%;
+.img4 {
+	position: absolute;
+	top: 80px;
+	right: 120px;
 }
 
-#hero-section > div {
-    display: flex;
-    align-items: center;
+.img2 {
+	position: absolute;
+	bottom: 80px;
+	left: 120px;
 }
 
-#hero-section img {
-    margin: 0% -10%;
-}
+.img3 {
+	position: absolute;
+	bottom: 80px;
+	right: 120px;
+} 
+*/
 
-.select-work-touch {
-    display: flex;
-    align-items: baseline;
-    gap: 20px;
-}
-
-#logos-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: baseline;
-}
-
-.selected {
-    background-color: #072AC8;
-    color: #ffffff;
-    border-style: none;
-    padding: 15px 36px 15px 36px;
-}
-
-/* Recent projects----------------------- */
-#our-work {
-    margin: 5% 15%;
-}
-
-
-
-#our-work > div {
-    display: flex;
-    justify-content: space-between;
-    gap: 40px;
-}
-
-#our-work > div > div {
-    background-color: #ffffff;
-    padding-bottom: 45px;
-}
-
-#our-work p {
-    font-size: 17px;
-    margin-top: -10px;
-}
-
-#our-work h5, p, a {
-    margin: 30px;
-  }
-
-
-  #our-work a {
-    color: #072AC8;
-  }
 
 
 /* What our clients say------------------- */
-  
+/*    
 #blue-rectangle {
     height: 622px;
     width: 1320px;
@@ -155,29 +321,7 @@ li {
     top: 250px;
 }
 
-.img1 {
-	position: absolute;
-	top: 80px;
-	left: 120px;
-}
 
-.img4 {
-	position: absolute;
-	top: 80px;
-	right: 120px;
-}
-
-.img2 {
-	position: absolute;
-	bottom: 80px;
-	left: 120px;
-}
-
-.img3 {
-	position: absolute;
-	bottom: 80px;
-	right: 120px;
-}
 
 #blue-rectangle div {
     display: flex;
@@ -197,4 +341,4 @@ li {
 #blue-rectangle span {
     color: #F4F6FC;
     font-size: 13px;
-}
+}  */
