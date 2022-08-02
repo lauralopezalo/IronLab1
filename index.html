@@ -12,8 +12,8 @@
 </head>
 <body>
     <nav>
-        <div>
-            <img src="https://res.cloudinary.com/dflnp8bry/image/upload/v1658242141/IronLab1/Logos/Logo_ahvuqs.png" alt="Circle logo">
+        <div class="nav-container">
+            <img src="https://res.cloudinary.com/dflnp8bry/image/upload/v1659448889/IronLab1/Logos/circle_aoc9sw.svg" alt="Circle logo">
             <ul class="text-small">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#projects">Projects</a></li>
@@ -24,29 +24,35 @@
     </nav>
 
 <!-- Main section / Front Page -->
-    <section id="hero-section">
-        <div>
-            <div>
+    <section>
+        <div class="hero-section">
+            <div class="title-hero-section">
                 <h1>Empower Your Business With Stunning Design!</h1>
-                <p>Circle is a digital design and development studio. We design and develop astonishing websites <br>and mobile apps.</p>
+            </div>
+            <div class="subtitle-hero-section">
+                <p>Circle is a digital design and development studio. We design and develop astonishing websites and mobile apps.</p>
             </div>
             <div class="hero-buttons">
                 <a class="selected-button" href="#touch">Get in touch</a>
                 <a class="button-not-selected" href="#our work">See our work</a> 
             </div>
-            <div>
-                <img class="targets" src="https://res.cloudinary.com/dflnp8bry/image/upload/v1659341922/IronLab1/card-1_yilsf0.png" alt="Credit card">
-                <img class="targets" src="https://res.cloudinary.com/dflnp8bry/image/upload/v1659341918/IronLab1/card-2_lstfpg.png" alt="Thumb up">
-                <img src="https://res.cloudinary.com/dflnp8bry/image/upload/v1659341918/IronLab1/hero-image_a0nwzw.png" alt="Hero boy">
+            <div class="img-targets-hero-container">
+                <img class="target-1" src="https://res.cloudinary.com/dflnp8bry/image/upload/v1659341922/IronLab1/card-1_yilsf0.png" alt="Credit card">
+                <img class="target-2" src="https://res.cloudinary.com/dflnp8bry/image/upload/v1659341918/IronLab1/card-2_lstfpg.png" alt="Thumb up">
+                <img class="hero-boy" src="https://res.cloudinary.com/dflnp8bry/image/upload/v1659341918/IronLab1/hero-image_a0nwzw.png" alt="Hero boy">
             </div>
         </div>
-        <div id="logos-container">
+        <div class="logos-container">
             <div>
                 <img src="https://res.cloudinary.com/dflnp8bry/image/upload/v1658237819/IronLab1/Logos/Airbnb_Logo_1_bjyao4.png" alt="airbnb logo">
+            </div>
+            <div>
                 <img src="https://res.cloudinary.com/dflnp8bry/image/upload/v1658237819/IronLab1/Logos/Google_Logo_1_kvlyle.png" alt="google logo">
             </div>
             <div>
                 <img src="https://res.cloudinary.com/dflnp8bry/image/upload/v1658237818/IronLab1/Logos/Microsoft_Logo_1_a1ygxt.png" alt="microsoft logo">
+            </div>  
+            <div>
                 <img src="https://res.cloudinary.com/dflnp8bry/image/upload/v1658237819/IronLab1/Logos/FedEx_Logo_1_ekcqpn.png" alt="fedex logo">
             </div>
             <img class="amazon-logo" src="https://res.cloudinary.com/dflnp8bry/image/upload/v1658237819/IronLab1/Logos/Amazon_Logo_1_pqmc4x.png" alt="amazon logo">
@@ -55,7 +61,9 @@
 
 <!-- Recent Projects / Our work-->
     <section id="our-work">
-        <h3>Recent Projects</h3>
+        <div>
+            <h3>Recent Projects</h3>
+        </div>
         <div>
             <div class="project-target">
                 <div class="project-img">
@@ -71,17 +79,21 @@
                 <div class="project-img">
                     <img src="https://res.cloudinary.com/dflnp8bry/image/upload/v1658237818/IronLab1/Fondos/Colorful%20shape%202.png" alt="Colorful shape 2">
                 </div>
-                <h5>Dashcoin</h5>
-                <p>Web Development</p>
-                <a href="#">Learn More</a>
+                <div>
+                    <h5>Dashcoin</h5>
+                    <p>Web Development</p>
+                    <a href="#">Learn More</a>
+                </div>
             </div>
             <div class="project-target">
                 <div class="project-img">
                     <img src="https://res.cloudinary.com/dflnp8bry/image/upload/v1658237818/IronLab1/Fondos/Colorful%20shape%203.png" alt="Colorful shape 3">
                 </div>
-                <h5>Vectorify</h5>
-                <p>User Experience Design</p>
-                <a href="#">Learn More</a>
+                <div>
+                    <h5>Vectorify</h5>
+                    <p>User Experience Design</p>
+                    <a href="#">Learn More</a>
+                </div>
             </div>
         </div>
     </section>
@@ -89,65 +101,105 @@
 <!-- Hear what our clients say -->
 <section id="blue-rectangle">
     <img src="https://res.cloudinary.com/dflnp8bry/image/upload/v1658237818/IronLab1/Orbit_h4rx3d.png" alt="Orbit lines">
-   
-        <h3>Hear What Our Clients Have to Say</h3>
-        <h5>"Circle helped us through every stage of our startup. <br> We really enjoyed working with you."</h5>
+    <div class="container-blue-rectangle" >
         <div>
-            <img src="https://res.cloudinary.com/dflnp8bry/image/upload/v1658237819/IronLab1/Ellipse_24_vipvqi.png" alt="Profile image">
-            <p>Kristin Watson<br><span>Booking.com</span></p>
+            <h3>Hear What Our Clients Have to Say</h3>
         </div>
-        <img class="img1" src="https://res.cloudinary.com/dflnp8bry/image/upload/v1658237819/IronLab1/Emoticonos/Emoticono%201.png" alt="Emoji 1">
-        <img class="img2" src="https://res.cloudinary.com/dflnp8bry/image/upload/v1658237818/IronLab1/Emoticonos/Emoticono%202.png" alt="Emoji 2">
-        <img class="img3" src="https://res.cloudinary.com/dflnp8bry/image/upload/v1658237818/IronLab1/Emoticonos/Emoticono%203.png" alt="Emoji 3">
-        <img class="img4" src="https://res.cloudinary.com/dflnp8bry/image/upload/v1658237819/IronLab1/Emoticonos/Emoticono%204.png" alt="Emoji 4">
+        <div class="blue-rectangle-h5">     
+            <h5>"Circle helped us through every stage of our startup. We really enjoyed working with you."</h5>
+        </div>
+        <div class="booking-user">
+            <div>
+                <img src="https://res.cloudinary.com/dflnp8bry/image/upload/v1658237819/IronLab1/Ellipse_24_vipvqi.png" alt="Profile image">
+            </div>
+            <div>
+                <p>Kristin Watson<br><span>Booking.com</span></p>
+            </div>
+        </div>
+        <div class="emojis" >
+            <img class="img1" src="https://res.cloudinary.com/dflnp8bry/image/upload/v1658237819/IronLab1/Emoticonos/Emoticono%201.png" alt="Emoji 1">
+            <img class="img2" src="https://res.cloudinary.com/dflnp8bry/image/upload/v1658237818/IronLab1/Emoticonos/Emoticono%202.png" alt="Emoji 2">
+            <img class="img3" src="https://res.cloudinary.com/dflnp8bry/image/upload/v1658237818/IronLab1/Emoticonos/Emoticono%203.png" alt="Emoji 3">
+            <img class="img4" src="https://res.cloudinary.com/dflnp8bry/image/upload/v1658237819/IronLab1/Emoticonos/Emoticono%204.png" alt="Emoji 4">
+        </div>
+    </div>
 </section>
 
 <!-- Our services -->
-<section>
-    <h3>Our services</h3>
-    <div class="project-target">
-        <img src="https://res.cloudinary.com/dflnp8bry/image/upload/v1658237819/IronLab1/Iconos/pen.png" alt="Pen icon">
-        <h5>User Interface Design</h5>
-        <p>Circle provides you with a stunning user interface design that is accessible to everyone.</p>
-        <a href="#">Learn More</a>
+<section id="services">
+    <div>
+        <h3>Our services</h3>
     </div>
-    <div class="project-target">
-        <img src="https://res.cloudinary.com/dflnp8bry/image/upload/v1658237819/IronLab1/Iconos/pointer.png" alt="Pointer icon">
-        <h5>User Experience Design</h5>
-        <p>Circle always focuses on delivering the best user experience to your customers.</p>
-        <a href="#">Learn More</a>
-    </div>
-    <div class="project-target">
-        <img src="https://res.cloudinary.com/dflnp8bry/image/upload/v1658237818/IronLab1/Iconos/code.png" alt="Code icon">
-        <h5>Application Development</h5>
-        <p>We develop high-quality mobile and web applications using the latest technology stack.</p>
-        <a href="#">Learn More</a>
+    <div>
+        <div class="services-target">
+            <div class="services-icons" >
+                <img src="https://res.cloudinary.com/dflnp8bry/image/upload/v1658237819/IronLab1/Iconos/pen.png" alt="Pen icon">
+            </div>
+            <div>
+                <h5>User Interface Design</h5>
+                <p>Circle provides you with a stunning user interface design that is accessible to everyone.</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+        <div class="services-target">
+            <div class="services-icons">
+                <img src="https://res.cloudinary.com/dflnp8bry/image/upload/v1658237819/IronLab1/Iconos/pointer.png" alt="Pointer icon">
+            </div>
+            <div>
+                <h5>User Experience Design</h5>
+                <p>Circle always focuses on delivering the best user experience to your customers.</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+        <div class="services-target">
+            <div class="services-icons">
+                <img src="https://res.cloudinary.com/dflnp8bry/image/upload/v1658237818/IronLab1/Iconos/code.png" alt="Code icon">
+            </div>
+            <div>
+                <h5>Application Development</h5>
+                <p>We develop high-quality mobile and web applications using the latest technology stack.</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
     </div>
 </section>
 
 <!-- Contact form -->
-<section>
+<section id="form-section">
     <h3>Do you have any questions?</h3>
     <p>Let us help you!</p>
     <form action="">
-        <input type="email" id="email" placeholder="Enter your email"><br>
-        <button type="submit">Suscribe</button>
+        <div class="form-container">
+            <div class="email-container">
+                <img src="https://res.cloudinary.com/dflnp8bry/image/upload/v1659341928/IronLab1/Iconos/mail.svg" alt="email icon">
+                <input type="email" id="email" placeholder="Enter your email">
+            </div>
+            <div class="button-container">
+                <input type="submit" value="Suscribe" class="suscribe-button">
+            </div>
+        </div>
     </form>
 </section>
 
 
 <!-- Footer -->
 <Footer>
-    <img src="https://res.cloudinary.com/dflnp8bry/image/upload/v1658242141/IronLab1/Logos/Logo_ahvuqs.png" alt="Circle logo">
-       <address>2972 Westheimer Rd. Santa Ana,<br>Illinois 85486</address>
-    <div class="text-small">
-        <a href="#">Team</a>
-        <a href="#">Services</a>
-        <a href="#">About us</a>
-        <a href="#">Press</a>
-        <a href="#">Projects</a>
-        <a href="#">Privacy Policy</a>
-    </div>     
+    <div class="footer">
+        <div>
+            <img src="https://res.cloudinary.com/dflnp8bry/image/upload/v1659448889/IronLab1/Logos/circle_aoc9sw.svg" alt="Circle logo">
+        </div>
+        <div>
+            <p>2972 Westheimer Rd. Santa Ana,<br>Illinois 85486</p>
+        </div>
+        <div class="footer-links">
+            <a href="#">Team</a>
+            <a href="#">Services</a>
+            <a href="#">About Us</a>
+            <a href="#">Press</a>
+            <a href="#">Projects</a>
+            <a href="#">Privacy Policy</a>
+        </div>  
+    </div>   
 </Footer>
 </body>
 
