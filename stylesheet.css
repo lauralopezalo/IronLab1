@@ -41,28 +41,66 @@ p {
 /* logo and hamgurguer menu ---------------------- */
 
 nav {
-    /* width: 100vw; */
     height: 50px;
     margin: 0;
 }
 
-.nav-container ul, button {
+.nav-container {
+    position: relative;
+}
+
+.nav-container > img {
+    width: 55px;
+    position: absolute;
+    top: 16px;
+    left: 20px;
+}
+
+.hamburger {
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.close-icon {
     display: none;
 }
 
-.nav-container div {
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-    align-items: baseline;
-    padding: 15px 25px;
-}
+.smartphone-menu {
+    transform: translateY(-200%);
+    transition: transform 0.5s;
+    background-color: #dddddd;
+    z-index: 100;
+    list-style: none;
+    padding: 20px;
+  }
 
-.nav-container > div > img {
-    width: 55px;
-}
+  .show-smartphone-menu {
+    transform: translateY(50px);
+  }
+
+  .menu-item {
+    display: block;
+    font-size: 17px;
+    font-weight: 500;
+    color: #6b708d;
+    text-decoration: none;
+  }
 
 
+
+.nav-menu, .button-contact {
+    display: none;
+} 
 
 /* main section ---------------------- */
  
@@ -215,7 +253,7 @@ nav {
 /* What our clients say------------------- */
    
 #blue-rectangle {
-    height: 450px;
+    height: 500px;
     background-color: #292E47;
     position: relative;
     margin-bottom: 30px;
@@ -228,10 +266,10 @@ nav {
 }
 
 .container-blue-rectangle {
-    height: 400px;
+    height: 450px;
     display: flex;
     flex-direction: column;
-    padding: 6% 8%;
+    padding: 10% 8%;
     justify-content: space-around;
 }
 
@@ -301,8 +339,12 @@ nav {
     margin-bottom: 20px;
 }
 
-#services h5, p, a {
-    margin: 10px 30px;
+#services h5, a {
+    margin: 30px 30px;
+}
+
+#services p {
+    line-height: 1.15;
 }
 
 #services h3 {
@@ -327,21 +369,23 @@ nav {
 
 #form-section {
     background-color: #FFC600;
-    height: 380px;
+    height: 500px;
     display: flex;
     flex-direction: column;
-    padding: 20% 8%;
+    justify-content: center;
+    align-items: center;
 }
 
 #form-section h3 {
     color: #292E47;
-    margin: 0 0 0 12px;
+    margin: 0 0px 0 12px;
     line-height: 1.5;
     text-align: left;
+    padding-left: 20px;
 }
 
 #form-section p {
-    color: #292E47;
+    color: #6B708D;
     margin: 30px 0 40px 0; 
     line-height: 20px;
     text-align: center;
@@ -357,6 +401,7 @@ nav {
 	align-items: stretch;
 	align-content: stretch;
     gap: 25px;
+    padding: 20px;
 }
 
 .suscribe-button {
@@ -414,13 +459,19 @@ nav {
     padding: 50px 0px;
 }
 
+.footer-logo-address {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .footer img {
     width: 100px;
+    margin-bottom: 20px;
 }
 
 .footer div {
-    padding: 20px 0;
-  
+    padding: 10px 0;
 }
 
 .footer p {
@@ -448,8 +499,7 @@ nav {
 }
 
 
-
-
+/* ----------------------------------------------------------*/
 @media screen and (min-width: 768px) {
     h1 {
         font-size: 60px;
@@ -457,7 +507,6 @@ nav {
 
     h3 {
         font-size: 40px;
-        text-align: left;
     }
 
     p {
@@ -505,69 +554,200 @@ nav {
         width: 580px;
     }
 
+    /* Recent Projects / Our work- */
+
+    #our-work h3 {
+        text-align: left;
+    }
+
+    #our-work > div {
+        gap: 6%; 
+        width: 90vw;
+    }
+    
+    .project-target-container {
+        flex-wrap: wrap;
+    }
+    .project-target {
+        width: 320px;
+    }
+
+    /* Hear what our clients say  */
+
+    .emojis img {
+        display: unset;
+        width: 110px;
+    }
+
+    .emojis {
+        display: relative;
+    }
+    
+    .emoji1 {
+        position: absolute;
+        top: 55px;
+        left: 55px;
+    }
+
+    .emoji2 {
+        position: absolute;
+        top: 55px;
+        right: 55px;
+    }
+
+    .emoji3 {
+        position: absolute;
+        bottom: 40px;
+        left: 55px;
+    }
+
+    .emoji4 {
+        position: absolute;
+        bottom: 40px;
+        right: 55px;
+    } 
+
+    #blue-rectangle h3 {
+        padding: 0 18%;
+    }
+
+
+
 
     /* Our services */
+
+    #services h3 {
+        text-align: left;
+    }
+
+    #services > div {
+        width: 90vw;
+    }
+
+    #services p {
+        font-size: 17px;
+    }
+
+    .services-target-container {
+        justify-content: space-between;
+        display: flex;
+    }
+
     .services-target {
-        /* background-color: #ffffff;
-        padding-bottom: 45px; */
-        width: 30%;
-        /* margin-bottom: 20px; */
+        width: 30%; 
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; 
+    }
+
+    /* Contact form */
+
+    #form-section h3 {
+        text-align: center;
+    }
+
+    .form-container {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .suscribe-button {
+        width: 190px;
+    }
+    
+    
+    .email-container {
+        width: 400px;
+    }
+    
+    
+    .email-container > img {
+        width: 30px;
+        padding-left: 15px;
+    }
+
+    /* footer */
+
+    .footer {
+        flex-direction: row;
+
+    }
+
+    .footer-logo-address {
+        align-items: flex-start;
+        width: 350px;
+        margin: 0 30px 0 30px;
+    }
+
+   
+    .footer img {
+        margin-bottom: 10px;
+    }
+    
+    
+    .footer-links {
+        width: 300px;
+        grid-template-columns: auto auto auto;
+        gap: 40px;
+    }
+
+    .footer a, p {
+        font-size: 17px;
+        text-align: left;
     }
 }
 
-/* Escritorio */
-/* nav menu */
 
-/* nav {
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-    align-items: baseline;
-    margin: 5% 15%;
+@media screen and (min-width: 1024px) {
+
+    body {
+        padding: 40px 15%;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .nav-container > img {
+        position: absolute;
+    }
+
+
+    .nav-menu {
+        display: flex;
+        margin: 0 30% 0 25%;
+        position: absolute;
+        top: 15px;
+        /* left: 30%; */ */
+        /* transform: translate(-50, -50); */
+    }
+
+    li {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-menu a {
+        text-decoration: none;
+    }
+    
+    .button-contact {
+        display: block;
+        background-color: #072AC8;
+        color: #ffffff;
+        border-style: none;
+        padding: 15px 36px 15px 36px;
+        position: absolute;
+        top: 12px;
+        right: 20px;
+    }
+   
+
 }
 
-li {
-    list-style-type: none;
-    display: inline;
-    padding: 0px 15px;
-}
-
-.button-contact {
-    background-color: #072AC8;
-    color: #ffffff;
-    border-style: none;
-    padding: 15px 36px 15px 36px;
-} */
 
 
-
-
-
-/* emoticonos */
-/* .img1 {
-	position: absolute;
-	top: 80px;
-	left: 120px;
-}
-
-.img4 {
-	position: absolute;
-	top: 80px;
-	right: 120px;
-}
-
-.img2 {
-	position: absolute;
-	bottom: 80px;
-	left: 120px;
-}
-
-.img3 {
-	position: absolute;
-	bottom: 80px;
-	right: 120px;
-} 
-*/
 
 
 
