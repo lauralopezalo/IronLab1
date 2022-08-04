@@ -48,7 +48,6 @@ nav {
 .nav-container {
     position: relative;
     height: 60px;
-    width: 100vw;
 }
 
 .nav-container img {
@@ -97,9 +96,20 @@ nav {
     text-decoration: none;
   }
 
+ .button-contact {
+    text-decoration: none;
+    position: absolute;
+    top: -25px;
+    right: 40px;
+    display: none;
+    cursor: pointer;
 
+}
 
-.nav-menu, .button-contact {
+.nav-menu {
+    position: absolute;
+    top: 0px;
+    right: 440px;
     display: none;
     cursor: pointer;
 }
@@ -607,15 +617,16 @@ nav {
 }
 
 .contact-form ::placeholder {
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
-    padding-left: 20px;
+    padding: 20px;
 }
 
 .button-margin {
     margin: 100px 20px 50px 20px;
 }
 
-.button-container input{
+.button-container button{
     background-color: transparent;
 }
 

@@ -32,7 +32,7 @@ menuItems.forEach(
 
   //---------------------------------------------------------------------------
 
-// Rellenar las fichas de Recent Projects --------------------------
+// Rellenar las fichas de Recent Projects --------------------------------
 
 
    async function getData() {
@@ -70,4 +70,42 @@ menuItems.forEach(
 
  fillCards()
 
+//---------------------------------------------------------------------------
 
+
+//Validación y envío de formulario---------------------------------
+
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("formulario").addEventListener('submit', validarFormulario); 
+  });
+  
+  function validarFormulario(evento) {
+    evento.preventDefault();
+    let name = document.getElementById('name').value;
+    if(name.length == 0) {
+      alert('Escribe tu nombre');
+      formulario.name.focus();
+      return;
+    }
+    let email = document.getElementById('mail').value;
+    if (email.length == 0) {
+      alert('Escribe tu email');
+      formulario.mail.focus();
+      return;
+    }
+    let phone = document.getElementById('phone').value;
+    if (phone.length == 0) {
+      alert('Escribe tu teléfono');
+      formulario.phone.focus();
+      return;
+    }
+    let message = document.getElementById('message').value;
+    if (message.length == 0) {
+      alert('Escribe el motivo de tu consulta');
+      formulario.message.focus();
+      return;
+    }
+    
+    formulario.submit()
+    alert('El formulario se ha enviado correctamente');
+  }
